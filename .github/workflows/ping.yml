@@ -14,4 +14,6 @@ jobs:
         run: |
           curl -s -f -L \
           -x "${{ secrets.WEBSHARE_PROXY_URL }}" \
+          -o /dev/null \
+          -w "HTTP-Status: %{http_code}\n" \
           "https://repetify.lorenzboss.com/users/sign_in"
