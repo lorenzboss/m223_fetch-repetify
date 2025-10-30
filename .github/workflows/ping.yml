@@ -21,6 +21,6 @@ jobs:
       # Job step name
       - name: Call Repetify Login URL via Webshare
         run: |
-          curl -v -s -f -L \
+          curl -s -f -L \
           -x "${{ secrets.WEBSHARE_PROXY_URL }}" \
           "https://repetify.lorenzboss.com/users/sign_in" > /dev/null
