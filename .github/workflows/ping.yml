@@ -1,0 +1,26 @@
+# Workflow name
+name: Ping Repetify URL
+
+# Triggers for the workflow
+on:
+  schedule:
+    # Runs every 15 minutes
+    - cron: "*/15 * * * *"
+
+  # Allows manual runs from the Actions tab
+  workflow_dispatch:
+
+# Defines the jobs to run
+jobs:
+  ping-url:
+    # The type of machine to run the job on
+    runs-on: ubuntu-latest
+
+    # Sequence of tasks
+    steps:
+      # Job step name
+      - name: Call Repetify Login URL via Webshare
+        run: |
+          curl -v -s -f -L \
+          -x "${{ secrets.WEBSHARE_PROXY_URL }}" \
+          "https://repetify.lorenzboss.com/users/sign_in" > /dev/null
