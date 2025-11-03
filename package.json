@@ -1,0 +1,24 @@
+{
+  "name": "m223_fetch-repetify",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lorenzboss/m223_fetch-repetify.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lorenzboss/m223_fetch-repetify/issues"
+  },
+  "homepage": "https://github.com/lorenzboss/m223_fetch-repetify#readme",
+  "dependencies": {
+    "axios": "^1.13.1",
+    "https-proxy-agent": "^7.0.6"
+  }
+}
